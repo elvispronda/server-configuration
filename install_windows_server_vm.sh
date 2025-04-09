@@ -1,4 +1,8 @@
 #!/bin/bash
+## THIS SCRIPT IS USED WHEN INSTALLING WINDOWS-SERVER-OS
+## ON VIRTUALBOX
+
+
 
 # VM settings
 VM_NAME="WindowsServer2022"
@@ -33,3 +37,22 @@ VBoxManage modifyvm "$VM_NAME" --nic1 nat
 
 # Start the VM
 VBoxManage startvm "$VM_NAME"
+
+
+## HOW TO RUN THE SCRIPT
+##nano install_windows_server_vm.sh
+##        CTRL+O (SAVE)
+##        ENTER(CONFIRM FILENAME)
+##        CTRL+X(EXIT)
+##  IN CASE YOU LIKE TO USE VIM INSTEAD OF NANO
+
+## vim install_windows_server_vm.sh
+##         i(ALLOW FILE EDITTING)
+##         TYPE :ESC ==> :wq(   SAVE CHANGES AND EXIT)
+
+
+##MAKE IT EXECUTABLE
+##chmod +x install_windows_server_vm.sh
+
+##HOW TO RUN THE SCRIPT
+##./install_windows_server_vm.sh
